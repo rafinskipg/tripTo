@@ -11,9 +11,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
+    background: url('/images/trip-to.png');
+    background-repeat: no-repeat;
+    background-size: expand;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -48,11 +53,49 @@ body {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+.homeContainer {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    background: #a29a7d;
+    margin-top: 20%;
+    border-radius: 10px;
 }
 
+#logo{
+    height: 100px;
+    background: #6ad5ec;
+    width: 100%;
+    position: relative;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+    img{
+        position: absolute;
+        top: -100px;
+        left: 24%;
+    }
+}
+
+#searchform{
+    margin-top: 30px;
+    label{
+        color: white;
+    }
+    input{
+        padding:20px;
+        background : #e1faff;
+        color: #a9b8ba;
+        display: block;
+        margin-left: 30%;
+        border: none;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+}
 .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px;

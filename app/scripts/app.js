@@ -12,6 +12,10 @@ angular.module('tripToSiteApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/results/:city', {
+        templateUrl: 'views/results.html',
+        controller: 'ResultsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
