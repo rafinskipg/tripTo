@@ -1,10 +1,19 @@
-<div class="homeContainer">
-  <div id="logo"><img src="/images/logo.png"></div>
-  <div class="info">
-    <div class="alert alert-{{alert.type}}" ng-repeat="alert in alerts">{{alert.message}}</div>
+
+<div class="jumbotron">
+  <div class="homeContainer">
+    <div id="logo" class="row">
+      <div class="col-md-6 col-md-offset-3 "><img src="/images/logo.png"></div>
+    </div>
+    <div class="info">
+      <div class="alert alert-{{alert.type}}" ng-repeat="alert in alerts">{{alert.message}}</div>
+    </div>
+    <div class="formcontainer">
+      <form  ng-submit="search()"  id="searchform" novalidate>
+        <label>Where do you want to trip?</label>
+        <input type="text" ng-model="searchText" placeholder="Type your destination here..."/>
+        <div class="envia_form" ng-click="search()"></div>
+      </form>
+    </div>
+    
   </div>
-  <form  ng-submit="search()"  id="searchform" placeholder="Type your destination here..." novalidate>
-    <label>Where do you want to trip?</label>
-    <input type="text" ng-model="searchText"/>
-  </form>
 </div>

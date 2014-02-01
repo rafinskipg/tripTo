@@ -2,6 +2,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+
+@import 'fonts';
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -16,9 +19,12 @@ body {
     background-size: expand;
     padding-top: 20px;
     padding-bottom: 20px;
+
 }
 
-
+body{
+    font-family: 'latolight_regular';
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -53,47 +59,64 @@ body {
 }
 
 /* Main marketing message and sign up button */
+.jumbotron{
+    background: transparent;
+}
 .homeContainer {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
     position:relative;
-    margin: 0;
-    padding: 0;
     background: #a29a7d;
     margin-top: 20%;
     border-radius: 10px;
 }
 
 #logo{
-    height: 100px;
+    height: 55px;
     background: #6ad5ec;
     width: 100%;
     position: relative;
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 0;
+
     img{
         position: absolute;
-        top: -100px;
-        left: 24%;
+        top: -84px;
+        left: 0;
+        max-width: 100%;
     }
 }
 
-#searchform{
-    margin-top: 30px;
+.formcontainer{
+    margin: 30px;
+    height: 250px;
     label{
         color: white;
+        margin-top:10px;
+        font-weight: normal;
     }
     input{
-        padding:20px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
         background : #e1faff;
         color: #a9b8ba;
         display: block;
-        margin-left: 30%;
         border: none;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 25px;
+        margin: auto;
+        &:focus{
+            background:white;
+        }
+    }
+    .envia_form{
+        background-image:url('/images/button_arrow_right.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        margin-top: 25px;
+        cursor:pointer;
     }
 }
 .jumbotron .btn {
