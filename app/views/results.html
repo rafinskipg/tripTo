@@ -4,4 +4,21 @@
     <div class="alert alert-{{alert.type}}" ng-repeat="alert in alerts">{{alert.message}}</div>
   </div>
   <div >hey nigga</div>
+  Events
+  <ul>
+    <li ng-repeat="event in events">
+        {{event.title}}  /  {{event.venue_name}}
+        {{event.start_time | date:fullDate}}
+        {{event.description}}
+        <div class="btn" ng-click="seeInMap(event.latitude, event.longitude)">See event</div>
+    </li>
+  </ul>
+  Weather
+  <ul>
+    <li ng-repeat="day in weather">
+        {{day.day_of_week}}  /  {{day.condition}} 
+        Max {{day.high_celsius}}º
+        Min {{day.low_celsius}}º
+    </li>
+  </ul>
 </div>
