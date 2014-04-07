@@ -6,3 +6,4 @@ It will bring you good information about the weather, the city and the events th
 
 
 tripTo is a original idea from Rafael Pedrola boosted by Rafael Gonzalez design. 
+http://openweathermap.org/API
